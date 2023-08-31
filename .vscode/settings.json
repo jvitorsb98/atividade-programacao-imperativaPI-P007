@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+    "C_Cpp.errorSquiggles": "disabled",
+>>>>>>> ff48af3 (atividades concluidas)
     "files.associations": {
         "iostream": "cpp"
     }

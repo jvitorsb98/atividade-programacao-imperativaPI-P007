@@ -1,30 +1,27 @@
-/*Exercício 9:
-Escreva um programa em C++ que leia um número inteiro e determine se ele é um número perfeito. Um número perfeito é aquele cuja soma dos seus divisores, excluindo ele mesmo, é igual ao próprio número.*/
+#include<iostream>
 
-#include <iostream>
 using namespace std;
 
-int main()
-{
-    int numero, soma = 0;
+int main(){
 
-    cout << "Digite um numero inteiro: ";
-    cin >> numero;
+    int numero;
+    int somatorio=0;
 
-    for (int i = 1; i < numero; i++)
-    {
-        if (numero % i == 0)
-        {
-            soma += i;
+    printf("Entre com um numero :");
+    scanf("%d",&numero);
+
+    for(int i = 0 ; i < ((numero/2)+1) ; i++){
+        if(numero%(i+1) == 0){
+            somatorio +=(i+1);
         }
     }
+    if(somatorio == numero){
+        printf("%d é um número perfeito",numero);
+    }else{
+        printf("%d não é um número perfeito",numero);
+    }
 
-    if (soma == numero)
-    {
-        cout << "O numero " << numero << " é perfeito." << endl;
-    }
-    else
-    {
-        cout << "O numero " << numero << " nao eh perfeito." << endl;
-    }
+
+
+    return 0;
 }

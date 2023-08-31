@@ -13,18 +13,19 @@ using namespace std;
 int main()
 {
     int altura;
-    char letra = 'A';
+    char caracter = 'A';
 
-    cout << "Digite a altura do padrao: ";
-    cin >> altura;
+    printf("Entre com a altura do padrão : ");
+    scanf("%d",&altura);
 
-    for (int i = 0; i < altura; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            cout << letra;
-            letra++;
+    for(int i = 0 ; i < altura ; i++){
+        for(int j=0 ; j <= i ; j++){
+            printf("%c",caracter);
+            caracter++;
         }
         cout << endl;
     }
+
+
+    return 0;
 }
