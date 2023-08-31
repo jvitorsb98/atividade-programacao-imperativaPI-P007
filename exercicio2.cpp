@@ -1,33 +1,27 @@
-#include<iostream>
-#include <algorithm> 
-#include<string>
-#include<cstring>
+#include <iostream>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
-int main(){
-
+int main() {
     int numero;
     string num;
     string num_invertido;
 
-    cout << "Entre com um numero : ";
+    cout << "Entre com um numero: ";
     cin >> numero;
 
     num = to_string(numero);
-    num_invertido =  to_string(numero);
-
+    num_invertido = num;
+    
     reverse(num_invertido.begin(), num_invertido.end());
-
-    if(strcmp(num,num_invertido)==0){
-        printf("%d é um palindromo",numero);
-    }else{
-        printf("%d não é um palindromo",numero);
+    
+    if (num == num_invertido) {
+        cout << numero << " é um palíndromo" << endl;
+    } else {
+        cout << numero << " não é um palíndromo" << endl;
     }
-
-
-
-
 
     return 0;
 }

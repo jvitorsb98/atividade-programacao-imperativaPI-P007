@@ -4,9 +4,19 @@ using namespace std;
 
 int main(){
 
-    for(int i = 0 ; i < 5 / i++)
+    int altura;
+    char caracter = 'A';
 
-    
+    printf("Entre com a altura do padrão : ");
+    scanf("%d",&altura);
+
+    for(int i = 0 ; i < altura ; i++){
+        for(int j=0 ; j <= i ; j++){
+            printf("%c",caracter);
+            caracter++;
+        }
+        cout << endl;
+    }
 
 
     return 0;
