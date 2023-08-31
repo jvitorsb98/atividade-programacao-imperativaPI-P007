@@ -22,7 +22,7 @@ int main()
         numero /= 10;
     }
     if (numeroOriginal == numeroInvertido)
-        cout << numeroOriginal << " eh um numero palindromo";
+        cout << numeroOriginal << " eh um numero palindromo" << endl;
     else
-        cout << numeroOriginal << " nao eh um numero palindromo";
+        cout << numeroOriginal << " nao eh um numero palindromo" << endl;
 }
