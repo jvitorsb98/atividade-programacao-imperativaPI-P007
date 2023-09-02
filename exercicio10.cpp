@@ -1,36 +1,22 @@
-#include <iostream>
-#include <cmath>
+#include<iostream>
 
-using namespace std;
+int main(){
 
-int main() {
+    int n1 = 1, n2 =1;
     int numero;
-    int numDigitos = 0;
-    int temp;
-    int soma = 0;
-    cout << "Entre com um numero: ";
-    cin >> numero;
 
-    temp = numero;
+    printf("Entre com um número : ");
+    scanf("%d",&numero);
 
-    while (temp > 0) {
-        temp /= 10;
-        numDigitos++;
-    }
 
-    temp = numero;
 
-    while (temp > 0) {
-        int digito = temp % 10;
-        soma += pow(digito, numDigitos);
-        temp /= 10;
-    }
+    do{ 
+        printf("%d\n",n2);
+        n2 += n1;
+        n1 = n2 -n1;
 
-    if (soma == numero) {
-        cout << numero << " é um número Armstrong." << endl;
-    } else {
-        cout << numero << " não é um número Armstrong." << endl;
-    }
+    }while(n2<=numero);
+
 
     return 0;
 }
