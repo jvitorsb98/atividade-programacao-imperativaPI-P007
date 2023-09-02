@@ -1,1 +1,7 @@
-# https-github.com-Albertinesilva-atividade-programacao-imperativaPI-P007
+# Atividade referente a lista de exercicios sobre laços de repetição
+
+# Participantes
+
+## João
+## Albert
+## Edmundo
